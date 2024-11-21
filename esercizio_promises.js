@@ -6,7 +6,7 @@ function order_marco(marco) {
         }
 
         console.log('Ordine ricevuto per: ' + marco);
-
+        
         setTimeout(() => {
             console.log('Preparazione del cibo per: ' + marco);
             resolve(marco);
@@ -16,7 +16,7 @@ function order_marco(marco) {
         return new Promise((resolve) => {
             setTimeout(() => {
                 console.log('Consegna dell\'ordine per: ' + result);
-                resolve(result);
+                resolve(result);  
             }, 1000);
         });
     });
